@@ -36,6 +36,7 @@ Files are not deleted after each processing step, but if space is a concern can 
 The pipeline can be set to overwrite already processed files or to skip the already done files in case the code has been stopped early.
 
 **Helper functions**
+
 The 'ffmpegSplit.py' is based on the work by https://github.com/ToastyMallows/ffmpegSplit and uses direct calls to ffmpeg through the subprocess library. It contains the functions:
 - fix_video - for recoding the video 
 - split_into_days - for splitting the raw fixed video into days. If the file is longer than a day, it is split at 0:00 hours
